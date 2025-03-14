@@ -14,15 +14,19 @@ $user = try_authentification();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceuil - Tracker</title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
 </head>
 <body>
     <h1>Page d'acceuil</h1>
 
 <?php
     if($user != null){
-        echo "Bienvenue {$user['email']}";
-        echo "<br>";
-        echo "<a href='/logout.php'>Logout</a>";
+?>
+    <!-- fetch his transactions and display them -->
+
+    <span>Vos transactions</span>
+    <ul class="transList"></ul>
+<?php       
     }
     else {
 ?>
@@ -31,6 +35,6 @@ $user = try_authentification();
 <?php
     }
 ?>
-    <!-- <script src="/static/js/debug.js"></script> -->
+    <script src="/static/js/index.js"></script>
 </body>
 </html>
