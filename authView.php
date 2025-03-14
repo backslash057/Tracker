@@ -15,16 +15,16 @@
                 <input type="email" name="email" id="email" required>
             </div>
             <div class="form-entry">
-                <label for="pwd">Password</label>
+                <label for="pwd">Mot de passe</label>
                 <input type="password" name="pwd" id="pwd" required>
             </div>
             <div class="remember-check">
                 <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me</label>
+                <label for="remember">Se souvenir de moi</label>
             </div>
             <div class="submit-box">
-                <input class="submit" type="submit" id="submit" value="Sign Up" />
-                <div class="alternative">Already an account? <a href="login.php">Log In</a></div>
+                <input class="submit" type="submit" id="submit" value="<?php echo $submitText ?>" />
+                <div class="alternative"><?php echo $altLabel ?> <a href="login.php"><?php echo $altText ?></a></div>
             </div>
         </form>
     </div>
