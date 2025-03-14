@@ -75,6 +75,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 else {
+    $submitText = "Se connecter";
+    $altLabel = "Pas encore de compte? ";
+    $altText = "S'inscrire";
+    
     require("authView.php");
 }
 ?>

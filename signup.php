@@ -73,6 +73,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 }
 else if($_SERVER["REQUEST_METHOD"] == "GET") {
+    $submitText = "S'inscrire";
+    $altLabel = "Deja un compte? ";
+    $altText = "Se connecter";
+    
     require("authView.php"); // Common template between auth(login and signup) pages
 }
 ?>
